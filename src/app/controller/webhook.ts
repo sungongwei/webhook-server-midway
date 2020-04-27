@@ -12,6 +12,10 @@ export class WebHookController {
     kaldorei: {
       path: '/data/node_wwb/ghost/current/content/themes/ghost-theme-kaldorei-master',
       ref: 'master'
+    },
+    webhook: {
+      path: '/data/node_wwb/webhook-server-midway',
+      ref: 'master'
     }
   };
   private async gitPull(path) {
