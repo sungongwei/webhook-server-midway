@@ -8,7 +8,7 @@ exports.default = (appInfo) => {
     config.middleware = [];
     config.cluster = {
         listen: {
-            port: 7002,
+            port: 3000,
             hostname: '127.0.0.1'
         }
     };
