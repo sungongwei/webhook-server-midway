@@ -48,5 +48,8 @@
     "url": ""
   },
   "author": "sungongwei",
-  "license": "MIT"
+  "license": "MIT",
+  "midway-server-options":{
+    "workers":1
+  }
 }
