@@ -1,5 +1,5 @@
 import { EggAppConfig, EggAppInfo, PowerPartial } from 'midway';
-
+import * as path  from 'path'
 export type DefaultConfig = PowerPartial<EggAppConfig>;
 
 export default (appInfo: EggAppInfo) => {
@@ -11,6 +11,9 @@ export default (appInfo: EggAppInfo) => {
   // add your config here
   config.middleware = [
   ];
+  config.logger = {
+    dir: path.join(appInfo.baseDir, 'logs', appInfo.name),
+  };
   config.cluster = {
     listen: {
       port: 3000,
